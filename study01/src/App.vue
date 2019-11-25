@@ -27,6 +27,7 @@
       <compute-component />
       <watch-component />
       <axios-component />
+      <life-cycle-component />
   </div>
 </template>
 
@@ -37,6 +38,7 @@ import BindComponent from './components/BindComponent';
 import ComputeComponent from './components/ComputeComponent';
 import WatchComponent from './components/WatchComponent';
 import AxiosComponent from './components/AxiosComponent';
+import LifeCycleComponent from './components/LifeCycleComponent';
 export default {
   name: 'app',
   components : {
@@ -45,7 +47,8 @@ export default {
     BindComponent,
     ComputeComponent,
     WatchComponent,
-    AxiosComponent
+    AxiosComponent,
+    LifeCycleComponent
   },
   data(){
     return {
@@ -63,7 +66,7 @@ export default {
     changeShowHide(){
       this.showHide = !this.showHide;
     }
-  },
+  }
 }
 </script>
 
